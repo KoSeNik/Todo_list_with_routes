@@ -1,0 +1,80 @@
+.app {
+	text-align: center;
+	width: 550px;
+	margin: 50px auto;
+	border: 2px solid #444;
+	border: none;
+	border-radius: 30px 10px;
+	background: gold;
+}
+
+.header {
+	height: 25px;
+	border-bottom: 2px solid #444;
+	padding: 10px;
+	font-weight: bold;
+}
+
+.loader {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(50%, 50%);
+	width: 25px;
+	height: 25px;
+	border: 5px solid gray;
+	border-radius: 50%;
+	border-left-color: transparent;
+	animation: loader 1s infinite;
+}
+
+@keyframes loader {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.todo {
+	border-bottom: 1px solid gray;
+	text-align: left;
+	padding: 10px;
+}
+
+.todo_short_description {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.todo_full_description {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	border-bottom: none;
+}
+
+.button {
+	margin: 10px;
+	border-radius: 5px;
+	border: none;
+	background: silver;
+}
+
+.buttonPressed {
+	opacity: 0.5;
+}
+
+.input {
+	width: 250px;
+	border-radius: 5px;
+	border: none;
+	margin-right: 10px;
+}
+
+.input_search {
+	width: 150px;
+	border-radius: 5px;
+	border: none;
+}
